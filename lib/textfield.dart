@@ -57,10 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       controllertext.text = '';
       if(valortext == "perro"){
-        valortext = "firulais";
+        valortext = "firulais".toUpperCase();
       }
       else if(valortext == "gato"){
-        valortext = "michi";
+        valortext = "michi".toUpperCase();
       }
         valorInput = valorInput + '\n' + valortext;
     });
