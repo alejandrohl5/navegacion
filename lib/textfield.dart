@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class textfield extends StatelessWidget {
   const textfield({Key? key}) : super(key: key);
   // This widget is the root of your application.
@@ -51,18 +50,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
- 
+
   void cambiar(String valortext) {
     // ignore: avoid_print
     setState(() {
       controllertext.text = '';
-      if(valortext == "perro"){
+      if (valortext == "perro") {
         valortext = "firulais".toUpperCase();
-      }
-      else if(valortext == "gato"){
+      } else if (valortext == "gato") {
         valortext = "michi".toUpperCase();
       }
-        valorInput = valorInput + '\n' + valortext;
+      valorInput = valorInput + '\n' + valortext;
     });
   }
 }
